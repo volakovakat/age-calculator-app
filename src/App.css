@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: hsl(0, 0%, 86%);
+  display: grid;
+}
+
+.app--age-calculator {
+  width: 450px;
+  background-color: #fff;
+  font-size: 32px;
+  padding: 32px;
+  border-radius: 14px 14px 100px 14px;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.app--result {
+  font-size: 52px;
+  font-weight: 800;
+  font-style: italic;
+  text-align: start;
+  line-height: 56px;
+}
+
+.app--attribution {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  align-self: end;
+  padding-bottom: 10px;
+}
+
+.c--highlight {
+  color: hsl(259, 100%, 65%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app--form-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+label, input {
+  color: hsl(0, 1%, 44%);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: start;
+}
+
+input {
+  width: 78px;
+  height: 38px;
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+input:invalid {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.form-divider {
+  position: relative;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0.5px solid hsl(0, 0%, 94%);
+}
+
+.btn-submit {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+  background-image: url("/assets/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  right: 0;
+  bottom: calc(50% - (48px / 2));
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+
+/* TODO */
+@container calculator (max-width: 600px) {
+  .app--age-calculator {
+  }
+}
